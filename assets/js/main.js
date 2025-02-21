@@ -56,6 +56,16 @@ $(function () {
     });
 
 
+    //====== Count Down
+    
+    $('[data-countdown]').each(function () {
+        var $this = $(this),
+            finalDate = $(this).data('countdown');
+        $this.countdown(finalDate, function (event) {
+            $this.html(event.strftime('<div class="coming_soon_count d-flex justify-content-between pt-20"><div class="single_count d-flex align-items-center justify-content-center mt-30"><div class="count_content"><span class="count">%D</span><p class="times">Giorni</p></div></div><div class="single_count d-flex align-items-center justify-content-center mt-30"><div class="count_content"><span class="count">%H</span><p class="times">Ore</p></div></div><div class="single_count d-flex align-items-center justify-content-center mt-30"><div class="count_content"><span class="count">%M</span><p class="times">Minuti</p></div></div><div class="single_count d-flex align-items-center justify-content-center mt-30"><div class="count_content"><span class="count">%S</span><p class="times">Secondi</p>                            </div></div></div>'));
+        });
+    });
+
 
     //===== Back to top
 
@@ -89,13 +99,5 @@ $(function () {
     
 
     //===== 
-
-
-
-
-
-
-
-
 
 });

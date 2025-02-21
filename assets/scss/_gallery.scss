@@ -14,6 +14,7 @@
 
 .single_gallery{
     position: relative;
+    margin-bottom: 20px;
     
     & .gallery_image{
         & img{
@@ -51,12 +52,14 @@
                 @include transition(0.3s);
                 opacity: 0;
                 visibility: hidden;
+                padding-bottom: 8px;
                 
                 &:first-child{
                     @include transform(translateX(-100%));
                 }
                 &:last-child{
                     @include transform(translateX(100%));
+                    padding-bottom: 0;
                 }
                 
                 & a{
@@ -65,7 +68,7 @@
                     line-height: 36px;
                     text-align: center;
                     font-size: 16px;
-                    color: $theme-color;
+                    color: $white;
                     border: 2px solid $theme-color;
                     border-radius: 50%;
                 }

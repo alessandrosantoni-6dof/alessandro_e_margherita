@@ -13,6 +13,9 @@
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
 
+    <!--====== Custom CSS ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+
     <!--====== Animate CSS ======-->
     <link rel="stylesheet" href="assets/css/animate.css">
 
@@ -20,7 +23,7 @@
     <link rel="stylesheet" href="assets/css/LineIcons.css">
 
     <!--====== Bootstrap CSS ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!--====== Default CSS ======-->
     <link rel="stylesheet" href="assets/css/default.css">
@@ -75,23 +78,26 @@
 
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ml-auto">
-                                    <li class="nav-item active">
-                                        <a class="page-scroll" href="#home">Home</a>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#couple">Storia</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#couple">Couple</a>
+                                        <a class="page-scroll" href="#location">Location</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#our_love">Story</a>
+                                        <a class="page-scroll" href="#agenda">Agenda</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#gallery">Gallery</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#event">Event</a>
+                                        <a class="page-scroll" href="#gift">Regalo</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#contact">RSVP</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#alloggio">Alloggio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#faq">FAQ</a>
                                     </li>
                                 </ul>
                             </div> <!-- navbar collapse -->
@@ -102,15 +108,15 @@
         </div> <!-- header navbar -->
 
         <div id="home" class="header_slider slider-active">
-            <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(assets/images/slider-1.jpg)">
+            <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(assets/images/hero.jpg)">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-10">
                             <div class="slider_content text-center">
-                                <h5 class="slider_sub_title" data-animation="fadeInUp" data-delay="0.2s">WE ARE GETTING MARRIED</h5>
-                                <h2 class="slider_title" data-animation="fadeInUp" data-delay="0.7s">Alessandro <span>&</span> Margherita</h2>
-                                <span class="location" data-animation="fadeInUp" data-delay="1s">The Big Church, New York, USA</span>
-                                <p data-animation="fadeInUp" data-delay="1.4s"><img src="assets/images/header-shape-1.png" alt="Shape">20 December 2023<img src="assets/images/header-shape-2.png" alt="Shape"></p>
+                                <h2 class="slider_title" >Alessandro <span>&</span> Margherita</h2>
+                                <span class="location" data-animation="fadeInUp" data-delay="1s">Rocca d'Ajello, Camerino (MC)</span>
+                                <p data-animation="fadeInUp" data-delay="1.4s"><img src="assets/images/header-shape-1.png" alt="Shape">Sabato 5 Luglio 2025 ore 18:00<img src="assets/images/header-shape-2.png" alt="Shape"></p>
+                                <div class="alert alert-primary" role="alert">Possiamo spostare gran parte del testo nella fascia sotto del countdown, per lasciare la hero abbastanza libera.</div>
                             </div> <!-- slider content -->
                         </div>
                     </div> <!-- row -->
@@ -121,6 +127,35 @@
 
     <!--====== HEADER PART ENDS ======-->
 
+    <!--====== COMING SOON PART START ======-->
+
+    <section id="coming_soon" class="coming_soon_area pt-20 pb-70">
+        <div class="coming_soon_shape_1">
+            <img src="assets/images/shape-1.png" alt="shape">
+        </div> <!-- shape -->
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="section_title pt-50 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.2s; animation-name: fadeIn;">
+                        <h3 class="title">Manca poco!</h3>
+                        <p>5 Luglio 2025</p>
+                        <img src="assets/images/section_shape.png" alt="Shape">
+                    </div> <!-- section title -->
+                </div>
+                <div class="col-lg-8">
+                    <div class="wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.6s" data-countdown="2025/07/05" style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.6s; animation-name: fadeIn;"><div class="coming_soon_count d-flex justify-content-between pt-20"><div class="single_count d-flex align-items-center justify-content-center mt-30"><div class="count_content"><span class="count">00</span><p class="times">Giorni</p></div></div><div class="single_count d-flex align-items-center justify-content-center mt-30"><div class="count_content"><span class="count">00</span><p class="times">Ore</p></div></div><div class="single_count d-flex align-items-center justify-content-center mt-30"><div class="count_content"><span class="count">00</span><p class="times">Minuti</p></div></div><div class="single_count d-flex align-items-center justify-content-center mt-30"><div class="count_content"><span class="count">00</span><p class="times">Secondi</p>                            </div></div></div></div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+
+        <div class="coming_soon_shape_2">
+            <img src="assets/images/shape-2.png" alt="shape">
+        </div> <!-- shape -->
+    </section>
+
+    <!--====== COMING SOON PART ENDS ======-->
+
     <!--====== COUPLE PART START ======-->
 
     <section id="couple" class="couple_area pt-120 pb-130">
@@ -128,7 +163,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center pb-30">
-                        <h3 class="title">Lovely Couple</h3>
+                        <h3 class="title">La coppia</h3>
                         <img src="assets/images/section_shape.png" alt="Shape">
                     </div> <!-- section title -->
                 </div>
@@ -141,8 +176,8 @@
                         </div>
                         <div class="couple_content text-center">
                             <img class="shape" src="assets/images/couple-shape.png" alt="shape">
-                            <h4 class="couple_name">Michael Smith</h4>
-                            <p>Hi I am Michael Smith, dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            <h4 class="couple_name">Alessandro Santoni</h4>
+                            <p>Hi I am Alessandro Santoni, dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
                             <ul class="social">
                                 <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
                                 <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
@@ -159,8 +194,8 @@
                         </div>
                         <div class="couple_content text-center">
                             <img class="shape" src="assets/images/couple-shape.png" alt="shape">
-                            <h4 class="couple_name">Jessica Jones</h4>
-                            <p>Hi I am Jessica Jones, dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            <h4 class="couple_name">Margherita Mariani</h4>
+                            <p>Hi I am Margherita Mariani, dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
                             <ul class="social">
                                 <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
                                 <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
@@ -176,30 +211,6 @@
 
     <!--====== COUPLE PART ENDS ======-->
 
-    <!--====== COMING SOON PART START ======-->
-
-    <section id="coming_soon" class="coming_soon_area pt-20 pb-70">
-        <div class="coming_soon_shape_1">
-            <img src="assets/images/shape-1.png" alt="shape">
-        </div> <!-- shape -->
-
-        <div class="container">
-
-        <div class="text-center">
-            <h1>You are Using Free Lite Version</h1>
-            <p>Please purchase full version to get all elements, sections and permission to remove footer credit</p>
-            <a href="https://rebrand.ly/wedding-day-ud" rel="nofollow" class="main-btn">Purchase Now</a>
-        </div>
-
-        </div> <!-- container -->
-
-        <div class="coming_soon_shape_2">
-            <img src="assets/images/shape-2.png" alt="shape">
-        </div> <!-- shape -->
-    </section>
-
-    <!--====== COMING SOON PART ENDS ======-->
-
     <!--====== OUR LOVE PART START ======-->
 
     <section id="our_love" class="our_love_area pt-120">
@@ -207,7 +218,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center pb-30">
-                        <h3 class="title">Our Love Story</h3>
+                        <h3 class="title">Insieme dal liceo</h3>
                         <img src="assets/images/section_shape.png" alt="Shape">
                     </div> <!-- section title -->
                 </div>
@@ -219,7 +230,7 @@
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna nose aaliquyam erat, sed diam voluptua. At vero eos et accusam justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea timata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum.</p>
                     </div>
                     <div class="love_date">
-                        <p><i class="lni lni-heart-filled"></i> 7 May 21</p>
+                        <p><i class="lni lni-heart-filled"></i>4 Febbraio 2012</p>
                     </div>
                     <div class="love_image order-md-first wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
                         <img src="assets/images/love-1.jpg" alt="love">
@@ -257,30 +268,39 @@
 
     <!--====== OUR LOVE PART ENDS ======-->
 
-    <!--====== GALLERY PART START ======-->
+    <!--====== LOCATION PART START ======-->
 
-    <section id="gallery" class="gallery_area pt-120">
-        <div class="container">
-
-        <div class="text-center">
-            <h1>You are Using Free Lite Version</h1>
-            <p>Please purchase full version to get all elements, sections and permission to remove footer credit</p>
-            <a href="https://rebrand.ly/wedding-day-ud" rel="nofollow" class="main-btn">Purchase Now</a>
-        </div>
-
-        </div> <!-- container -->
-    </section>
-
-    <!--====== GALLERY PART ENDS ======-->
-
-    <!--====== EVENT PART START ======-->
-
-    <section id="event" class="event_area pt-120 pb-130">
+    <section id="location" class="couple_area pt-120 pb-130">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center pb-30">
-                        <h3 class="title">Weeding Events</h3>
+                        <h3 class="title">Rocca d'Ajello</h3>
+                        <img src="assets/images/section_shape.png" alt="Shape">
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Scrivere istruzioni per arrivare</p>
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2909.0002226502984!2d13.061227376727805!3d43.18850617112804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ddb4be2312b39%3A0x86e3240c05489c24!2sCastello%20di%20Rocca%20d&#39;Ajello%20Camerino%20(MC)%2C%20Location%20per%20Matrimoni%20ed%20eventi%20Macerata%20(MC)!5e0!3m2!1sen!2sit!4v1740156692617!5m2!1sen!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== LOCATION PART ENDS ======-->
+
+    <!--====== AGENDA PART START ======-->
+
+    <section id="agenda" class="event_area pt-120 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-30">
+                        <h3 class="title">Agenda</h3>
                         <img src="assets/images/section_shape.png" alt="Shape">
                     </div> <!-- section title -->
                 </div>
@@ -329,25 +349,298 @@
         </div> <!-- container -->
     </section>
 
-    <!--====== EVENT PART ENDS ======-->
+    <!--====== AGENDA PART ENDS ======-->
 
+    <!--====== REGALO NOZZE PART START ======-->
 
+    <section id="gift" class="testimonial_area pt-120 pb-130">
+        <div class="testimonial_shape_1">
+            <img src="assets/images/shape-1.png" alt="shape">
+        </div> <!-- shape -->
+        
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-30">
+                        <h3 class="title">Il regalo di nozze</h3>
+                        <img src="assets/images/section_shape.png" alt="Shape">
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+
+            </div> <!-- row -->
+        </div> <!-- container -->
+        <div class="testimonial_shape_2">
+            <img src="assets/images/shape-2.png" alt="shape">
+        </div> <!-- shape -->
+
+        <div id="carouselExampleCaptions" class="carousel slide w-50 mx-auto">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://placehold.co/600x400?text=Grand+Canyon" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://placehold.co/600x400?text=Bora+Bora" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://placehold.co/600x400?text=Las+Vegas" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!--====== REGALO NOZZE PART ENDS ======-->
 
     <!--====== CONTACT PART START ======-->
 
-    <section id="contact" class="contact_area pt-130 pb-130">
+    <section id="contact" class="contact_area pt-120 pb-130">
         <div class="container">
-
-        <div class="text-center">
-            <h1>You are Using Free Lite Version</h1>
-            <p>Please purchase full version to get all elements, sections and permission to remove footer credit</p>
-            <a href="https://rebrand.ly/wedding-day-ud" rel="nofollow" class="main-btn">Purchase Now</a>
-        </div>
-
+            <div class="contact_wrapper wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.4s; animation-name: fadeInUpBig;">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="section_title text-center pb-30">
+                            <h3 class="title">You Are Invited!</h3>
+                            <img src="assets/images/section_shape.png" alt="Shape">
+                            <p class="text">Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat</p>
+                        </div> <!-- section title -->
+                    </div>
+                </div> <!-- row -->
+                <form id="contact-form" action="assets/contact.php">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="single_form">
+                                <input name="name" type="text" placeholder="Name">
+                            </div> <!-- single form -->
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single_form">
+                                <input name="email" type="email" placeholder="Email">
+                            </div> <!-- single form -->
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single_form">
+                                <input id="number" type="text" placeholder="Number Of Guest">
+                            </div> <!-- single form -->
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single_form">
+                                <input name="attending" type="text" placeholder="Attending On">
+                            </div> <!-- single form -->
+                        </div>
+                        <div class="col-md-12">
+                            <div class="single_form">
+                                <textarea name="message" placeholder="Message..."></textarea>
+                            </div> <!-- single form -->
+                        </div>
+                        <p class="form-message"></p>
+                        <div class="col-md-12">
+                            <div class="single_form text-center">
+                                <button class="main-btn">Confirm Invitation</button>
+                            </div> <!-- single form -->
+                        </div>
+                    </div> <!-- row -->
+                </form>
+            </div> <!-- container -->
         </div> <!-- container -->
     </section>
 
     <!--====== CONTACT PART ENDS ======-->
+
+    <!--====== ALLOGGIO PART START ======-->
+
+    <section id="alloggio" class="gallery_area pt-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-30">
+                        <h3 class="title">Dove alloggiare</h3>
+                        <img src="assets/images/section_shape.png" alt="Shape">
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+        <div class="gallery_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single_gallery">
+                            <div class="gallery_image">
+                                <img src="assets/images/gallery-1.jpg" alt="gallery">
+                            </div>
+                            <div class="gallery_content">
+                                <ul class="gallery_icon">
+                                    <li>Nome posto</li><br>
+                                    <li>Via tal dei tali, città, PR</li><br>
+                                    <li>⭐️⭐️⭐️⭐️⭐️</li><br>
+                                    <li><a class="image-popup" href="#"><i class="lni lni-zoom-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- single gallery -->
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single_gallery">
+                            <div class="gallery_image">
+                                <img src="assets/images/gallery-2.jpg" alt="gallery">
+                            </div>
+                            <div class="gallery_content">
+                                <ul class="gallery_icon">
+                                    <li>Nome posto</li><br>
+                                    <li>Via tal dei tali, città, PR</li><br>
+                                    <li>⭐️⭐️⭐️⭐️⭐️</li><br>
+                                    <li><a class="image-popup" href="#"><i class="lni lni-zoom-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- single gallery -->
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single_gallery">
+                            <div class="gallery_image">
+                                <img src="assets/images/gallery-3.jpg" alt="gallery">
+                            </div>
+                            <div class="gallery_content">
+                                <ul class="gallery_icon">
+                                    <li>Nome posto</li><br>
+                                    <li>Via tal dei tali, città, PR</li><br>
+                                    <li>⭐️⭐️⭐️⭐️⭐️</li><br>
+                                    <li><a class="image-popup" href="#"><i class="lni lni-zoom-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- single gallery -->
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single_gallery">
+                            <div class="gallery_image">
+                                <img src="assets/images/gallery-4.jpg" alt="gallery">
+                            </div>
+                            <div class="gallery_content">
+                                <ul class="gallery_icon">
+                                    <li>Nome posto</li><br>
+                                    <li>Via tal dei tali, città, PR</li><br>
+                                    <li>⭐️⭐️⭐️⭐️⭐️</li><br>
+                                    <li><a class="image-popup" href="#"><i class="lni lni-zoom-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- single gallery -->
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single_gallery">
+                            <div class="gallery_image">
+                                <img src="assets/images/gallery-5.jpg" alt="gallery">
+                            </div>
+                            <div class="gallery_content">
+                                <ul class="gallery_icon">
+                                    <li>Nome posto</li><br>
+                                    <li>Via tal dei tali, città, PR</li><br>
+                                    <li>⭐️⭐️⭐️⭐️⭐️</li><br>
+                                    <li><a class="image-popup" href="#"><i class="lni lni-zoom-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- single gallery -->
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single_gallery">
+                            <div class="gallery_image">
+                                <img src="assets/images/gallery-6.jpg" alt="gallery">
+                            </div>
+                            <div class="gallery_content">
+                                <ul class="gallery_icon">
+                                    <li>Nome posto</li><br>
+                                    <li>Via tal dei tali, città, PR</li><br>
+                                    <li>⭐️⭐️⭐️⭐️⭐️</li><br>
+                                    <li><a class="image-popup" href="#"><i class="lni lni-zoom-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- single gallery -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- gallery wrapper -->
+    </section>
+
+    <!--====== ALLOGGIO PART ENDS ======-->
+
+    <!--====== FAQ PART START ======-->
+
+    <section id="faq" class="pt-120 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-30">
+                        <h3 class="title">Domande più frequenti | FAQ</h3>
+                        <img src="assets/images/section_shape.png" alt="Shape">
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Fino a che ora si festeggia?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Dove posso parcheggiare?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          E se sono celiaco?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== FAQ PART ENDS ======-->
 
     <!--====== FOOTER PART START ======-->
 
@@ -362,7 +655,7 @@
                     <a href="#"><img src="assets/images/logo-2.png" alt="logo"></a>
                 </div>
                 <div class="footer_title">
-                    <h3 class="title">Michael <span>&</span> Jessica</h3>
+                    <h3 class="title">Alessandro <span>&</span> Margherita</h3>
                 </div>
                 <ul class="footer_menu">
                     <li><a href="#">Home</a></li>
@@ -373,9 +666,6 @@
                     <li><a href="#">RSVP</a></li>
                 </ul>
             </div> <!-- footer content -->
-            <div class="footer_copyright text-center">
-                <p>Designed and Developed by <a href="https://uideck.com" style="color: #D59A57" rel="nofollow">UIdeck</a></p>
-            </div>
         </div> <!-- container -->
     </footer>
 
@@ -387,34 +677,17 @@
 
     <!--====== BACK TOP TOP PART ENDS ======-->
 
-    <!--====== PART START ======-->
-
-<!--
-    <section class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-">
-                    
-                </div>
-            </div>
-        </div>
-    </section>
--->
-
-    <!--====== PART ENDS ======-->
-
-    <!-- row -->
-
-
-
 
     <!--====== Jquery js ======-->
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
 
     <!--====== Bootstrap js ======-->
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!--====== Custom js ======-->
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
 
     <!--====== Scrolling Nav js ======-->
     <script src="assets/js/jquery.easing.min.js"></script>
