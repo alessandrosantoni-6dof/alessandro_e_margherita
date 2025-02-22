@@ -592,11 +592,12 @@ p {
 
 .navbar-toggler {
   padding: 0;
+  border: none;
 }
 .navbar-toggler .toggler-icon {
   width: 30px;
   height: 2px;
-  background-color: #fff;
+  background-color: #7e6859;
   display: block;
   margin: 5px 0;
   position: relative;
@@ -823,10 +824,11 @@ p {
 }
 
 .sticky .navbar-toggler .toggler-icon {
-  background-color: #38424D;
+  background-color: #7e6859;
 }
 .sticky .navbar-nav .nav-item a {
-  color: #38424D;
+  color: #7e6859;
+  padding-top: 6px;
 }
 .sticky .navbar-nav .nav-item.active > a, .sticky .navbar-nav .nav-item:hover > a {
   color: #7e6859;

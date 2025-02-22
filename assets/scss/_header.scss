@@ -51,11 +51,12 @@
 
 .navbar-toggler {
     padding: 0;
+    border: none;
 
     & .toggler-icon {
         width: 30px;
         height: 2px;
-        background-color: $white;
+        background-color: $theme-color;
         display: block;
         margin: 5px 0;
         position: relative;
@@ -274,7 +275,7 @@
 .sticky{
     & .navbar-toggler {
         & .toggler-icon {
-            background-color: $black;
+            background-color: $theme-color;
         }
     }
     
@@ -282,7 +283,8 @@
     & .navbar-nav {
         & .nav-item {
             & a {
-                color: $black;
+                color: $theme-color;
+                padding-top: 6px;
             }
             
             &.active,
