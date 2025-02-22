@@ -14,9 +14,9 @@ $(function () {
     $(window).on('scroll', function (event) {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
-            $(".header_navbar").removeClass("sticky");
-            $(".header_navbar img").attr("src", "assets/images/logo.png");
+            $(".header_navbar").addClass("d-none");
         } else {
+            $(".header_navbar").removeClass("d-none");
             $(".header_navbar").addClass("sticky");
             $(".header_navbar img").attr("src", "assets/images/logo-2.png");
         }
@@ -100,4 +100,25 @@ $(function () {
 
     //===== 
 
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1.2,  // 2.5
+        spaceBetween: 10,
+        centeredSlides: true,
+        loop: true, // Enable looping
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        grabCursor: true,
+        breakpoints: {
+            767: {
+                slidesPerView: 2.5,
+                spaceBetween: 20,
+            },
+        },
+    });
 });

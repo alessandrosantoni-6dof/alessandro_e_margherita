@@ -12,6 +12,7 @@
 	font-weight: normal;
 	font-style: normal;
     color: $body-color;
+    overflow-x: hidden;
 }
 
 *{
@@ -262,7 +263,7 @@ p {
             height: 100%;
             border-style: solid;
             /* Spinner Color */
-            border-color: $theme-color $theme-color $gray;
+            border-color: $theme-color $theme-color $theme-color-2;
             border-radius: 50%;
             border-width: 6px;
         }
@@ -271,7 +272,7 @@ p {
             & .ytp-spinner-circle {
                 left: 0;
                 right: -100%;
-                border-right-color: $gray;
+                border-right-color: $theme-color-2;
                 @include animation( ytp-spinner-left-spin 1333ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite both);
             }
         }
@@ -280,7 +281,7 @@ p {
             & .ytp-spinner-circle {
                 left: -100%;
                 right: 0;
-                border-left-color: $gray;
+                border-left-color: $theme-color-2;
                 @include animation(ytp-right-spin 1333ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite both);
             }
         }
@@ -403,7 +404,25 @@ p {
     }
 }
 
+.swiper {
+    .swiper-slide {
+        text-align: center;
+        h1, h2, h3, h4, h5, h6 {
+            font-family: $font-2 !important;
+            color: $theme-color;
+        }
 
+        img {
+            width: 100%;
+            max-height: 500px;
+        }
+    }
 
+    .swiper-pagination {
+        top: 20px;
 
-
+        .swiper-pagination-bullet {
+            background-color: $theme-color;
+        }
+    }
+}

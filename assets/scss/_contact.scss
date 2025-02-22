@@ -60,8 +60,19 @@ p{
     }
 }
 
+.accordion {
+    .accordion-button {
+        font-family: $font-2;
+        font-weight: 500;
+        font-size: 18px;
+        background-color: $theme-color-2;
+        color: $black;
 
-
+        &.collapsed {
+            background-color: $white;
+        }
+    }
+}
 
 
 

@@ -12,6 +12,8 @@
 .love_wrapper{
     position: relative;
     margin-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
     
     @media #{$xs}{
         margin-top: 0;
