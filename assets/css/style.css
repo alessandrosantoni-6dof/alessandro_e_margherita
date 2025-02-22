@@ -513,6 +513,9 @@ p {
 }
 .swiper .swiper-slide {
   text-align: center;
+  position: relative;
+  height: 480px;
+  width: 480px;
 }
 .swiper .swiper-slide h1, .swiper .swiper-slide h2, .swiper .swiper-slide h3, .swiper .swiper-slide h4, .swiper .swiper-slide h5, .swiper .swiper-slide h6 {
   font-family: "Poppins", sans-serif !important;
@@ -520,10 +523,15 @@ p {
 }
 .swiper .swiper-slide img {
   width: 100%;
-  max-height: 500px;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
 }
-.swiper .swiper-pagination {
-  top: 20px;
+.swiper .swiper-slide button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .swiper .swiper-pagination .swiper-pagination-bullet {
   background-color: #7e6859;
@@ -1824,7 +1832,7 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
 }
 .footer_widget .footer_menu li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 6px 20px;
 }
 .footer_widget .footer_menu li a {
   font-size: 16px;

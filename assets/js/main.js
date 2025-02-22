@@ -65,45 +65,8 @@ $(function () {
             $this.html(event.strftime('<div class="coming_soon_count d-flex justify-content-between pt-20"><div class="single_count d-flex align-items-center justify-content-center mt-30"><div class="count_content"><span class="count">%D</span><p class="times">Giorni</p></div></div><div class="single_count d-flex align-items-center justify-content-center mt-30"><div class="count_content"><span class="count">%H</span><p class="times">Ore</p></div></div><div class="single_count d-flex align-items-center justify-content-center mt-30"><div class="count_content"><span class="count">%M</span><p class="times">Minuti</p></div></div><div class="single_count d-flex align-items-center justify-content-center mt-30"><div class="count_content"><span class="count">%S</span><p class="times">Secondi</p>                            </div></div></div>'));
         });
     });
-
-
-    //===== Back to top
-
-    // Show or hide the sticky footer button
-    $(window).on('scroll', function (event) {
-        if ($(this).scrollTop() > 600) {
-            $('.back-to-top').fadeIn(200)
-        } else {
-            $('.back-to-top').fadeOut(200)
-        }
-    });
-
-
-    //Animate the scroll to yop
-    $('.back-to-top').on('click', function (event) {
-        event.preventDefault();
-
-        $('html, body').animate({
-            scrollTop: 0,
-        }, 1500);
-    });
-
     
-    //=====  WOW active
-    
-    var wow = new WOW({
-        boxClass: 'wow', //
-        mobile: false, // 
-    })
-    wow.init();
-    
-
-    //===== 
-
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
+    //===== SwiperJS
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1.2,  // 2.5
         spaceBetween: 10,
@@ -121,4 +84,24 @@ document.addEventListener("DOMContentLoaded", function() {
             },
         },
     });
+
+    //===== Modal regalo di nozze
+    const exampleModal = document.getElementById('exampleModal')
+    if (exampleModal) {
+    exampleModal.addEventListener('show.bs.modal', event => {
+        // Button that triggered the modal
+        const button = event.relatedTarget
+        // Extract info from data-bs-* attributes
+        const destination = button.getAttribute('data-bs-destination')
+        // If necessary, you could initiate an Ajax request here
+        // and then do the updating in a callback.
+
+        // Update the modal's content.
+        const modalTitle = exampleModal.querySelector('.modal-title')
+        const modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+        modalTitle.textContent = `Tappa: ${destination}`
+        modalBodyInput.value = destination
+    })
+    }
 });
