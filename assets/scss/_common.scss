@@ -143,6 +143,12 @@ p {
         color: $theme-color;
         border-color: $theme-color;
     }
+
+    &.inverted {
+        border: 2px solid $white;
+        color: $theme-color;
+        background-color: $white;
+    }
     
     &.main-btn-2{
         background-color: $white;

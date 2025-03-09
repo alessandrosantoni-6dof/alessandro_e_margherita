@@ -3,14 +3,11 @@ $(function () {
     "use strict";
 
     //===== Prealoder
-
     $(window).on('load', function (event) {
         $('.preloader').delay(500).fadeOut(500);
     });
 
-
     //===== Sticky
-
     $(window).on('scroll', function (event) {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
@@ -24,7 +21,6 @@ $(function () {
     
     
     //===== Section Menu Active
-
     var scrollLink = $('.page-scroll');
     // Active link switching
     $(window).scroll(function () {
@@ -42,7 +38,6 @@ $(function () {
     });
     
     //===== close navbar-collapse when a  clicked
-
     $(".navbar-nav a").on('click', function () {
         $(".navbar-collapse").removeClass("show");
     });
@@ -57,7 +52,6 @@ $(function () {
 
 
     //====== Count Down
-    
     $('[data-countdown]').each(function () {
         var $this = $(this),
             finalDate = $(this).data('countdown');

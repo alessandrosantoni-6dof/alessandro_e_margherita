@@ -147,6 +147,11 @@ p {
   color: #7e6859;
   border-color: #7e6859;
 }
+.main-btn.inverted {
+  border: 2px solid #fff;
+  color: #7e6859;
+  background-color: #fff;
+}
 .main-btn.main-btn-2 {
   background-color: #fff;
   color: #7e6859;
@@ -1431,7 +1436,7 @@ p {
 
 .single_gallery {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .single_gallery .gallery_image {
   position: relative;
@@ -1496,16 +1501,6 @@ p {
 }
 .single_gallery .gallery_content .gallery_icon li:last-child {
   padding-bottom: 0;
-}
-.single_gallery .gallery_content .gallery_icon li a {
-  width: 40px;
-  height: 40px;
-  line-height: 36px;
-  text-align: center;
-  font-size: 16px;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 50%;
 }
 .single_gallery:hover .gallery_content::before {
   height: 100%;
@@ -1774,7 +1769,7 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
 .single_form textarea {
   padding-top: 15px;
   resize: none;
-  height: 185px;
+  height: 120px;
 }
 
 .accordion .accordion-button {
