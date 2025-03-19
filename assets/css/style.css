@@ -549,6 +549,7 @@ p {
 }
 .modal .modal-footer {
   background-color: #FCF4EC;
+  display: block;
 }
 .modal .modal-footer a {
   color: inherit;
