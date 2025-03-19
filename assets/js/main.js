@@ -71,6 +71,7 @@ $(function () {
             clickable: true,
         },
         grabCursor: true,
+        initialSlide: Math.floor(Math.random() * document.querySelectorAll('.mySwiper .swiper-slide').length), // Random initial slide
         breakpoints: {
             767: {
                 slidesPerView: 2.5,
@@ -92,10 +93,7 @@ $(function () {
 
         // Update the modal's content.
         const modalTitle = exampleModal.querySelector('.modal-title')
-        const modalBodyInput = exampleModal.querySelector('.modal-body input')
-
-        modalTitle.textContent = `Tappa: ${destination}`
-        modalBodyInput.value = destination
+        modalTitle.textContent = `${destination}`
     })
     }
 });

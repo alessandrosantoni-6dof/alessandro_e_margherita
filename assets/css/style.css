@@ -1,9 +1,10 @@
 /*===========================
      01.COMMON css 
 ===========================*/
-@import url("https://fonts.googleapis.com/css?family=Niconne|Poppins:300,400,500,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Serif", serif;
   font-weight: normal;
   font-style: normal;
   color: #747E88;
@@ -56,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Niconne", cursive;
+  font-family: "Parisienne", calligraphy;
   font-weight: 700;
   color: #38424D;
   margin: 0px;
@@ -125,7 +126,7 @@ p {
   -ms-user-select: none;
   user-select: none;
   border: 2px solid #7e6859;
-  padding: 0 40px;
+  padding: 0 20px;
   font-size: 16px;
   line-height: 46px;
   border-radius: 5px;
@@ -519,11 +520,11 @@ p {
 .swiper .swiper-slide {
   text-align: center;
   position: relative;
-  height: 480px;
+  height: 560px;
   width: 480px;
 }
 .swiper .swiper-slide h1, .swiper .swiper-slide h2, .swiper .swiper-slide h3, .swiper .swiper-slide h4, .swiper .swiper-slide h5, .swiper .swiper-slide h6 {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Noto Serif", serif !important;
   color: #7e6859;
 }
 .swiper .swiper-slide img {
@@ -531,6 +532,7 @@ p {
   height: 100%;
   object-fit: cover;
   opacity: 0.9;
+  border-radius: 4px;
 }
 .swiper .swiper-slide button {
   position: absolute;
@@ -539,7 +541,18 @@ p {
   transform: translate(-50%, -50%);
 }
 .swiper .swiper-pagination .swiper-pagination-bullet {
-  background-color: #7e6859;
+  background-color: #fff;
+}
+
+.modal .modal-header {
+  background-color: #FCF4EC;
+}
+.modal .modal-footer {
+  background-color: #FCF4EC;
+}
+.modal .modal-footer a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /*===========================
@@ -691,7 +704,7 @@ p {
   transition: all 0.3s ease-out 0s;
   padding: 10px 0;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Serif", serif;
   position: relative;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -867,7 +880,7 @@ p {
 }
 .slider_content .slider_sub_title {
   font-size: 30px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Serif", serif;
   font-weight: 600;
   color: #fff;
 }
@@ -1264,7 +1277,7 @@ p {
 }
 .coming_soon_count .single_count .count_content .count {
   font-size: 60px;
-  font-family: "Niconne", cursive;
+  font-family: "Parisienne", calligraphy;
   color: #fff;
   line-height: 45px;
 }
@@ -1638,7 +1651,7 @@ p {
   background-color: #fff;
 }
 .single_testimonial .testimonial_content .author_name {
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Serif", serif;
   font-size: 18px;
   font-weight: 600;
   color: #38424D;
@@ -1773,7 +1786,7 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
 }
 
 .accordion .accordion-button {
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Serif", serif;
   font-weight: 500;
   font-size: 18px;
   background-color: #FCF4EC;

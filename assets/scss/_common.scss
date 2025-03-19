@@ -4,8 +4,8 @@
      01.COMMON css 
 ===========================*/
 
-
-@import url('https://fonts.googleapis.com/css?family=Niconne|Poppins:300,400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
  body {
 	font-family: $font-2;
@@ -127,7 +127,7 @@ p {
 	vertical-align: middle;
 	@include user-select(none);
 	border: 2px solid $theme-color;
-	padding: 0 40px;
+	padding: 0 20px;
 	font-size: 16px;
 	line-height: 46px;
 	border-radius: 5px;
@@ -414,7 +414,7 @@ p {
     .swiper-slide {
         text-align: center;
         position: relative;
-        height: 480px;
+        height: 560px;
         width: 480px;
 
         h1, h2, h3, h4, h5, h6 {
@@ -427,6 +427,7 @@ p {
             height: 100%;
             object-fit: cover;
             opacity: 0.9;
+            border-radius: 4px;
         }
 
         button {
@@ -441,7 +442,23 @@ p {
         // top: 20px;
 
         .swiper-pagination-bullet {
-            background-color: $theme-color;
+            background-color: $white;
+        }
+    }
+}
+
+.modal {
+    .modal-header {
+        background-color: $theme-color-2;
+    }
+
+    .modal-footer {
+        background-color: $theme-color-2;
+        display: block;
+        
+        a {
+            color: inherit;
+            text-decoration: none;
         }
     }
 }
