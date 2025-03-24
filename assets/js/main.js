@@ -62,6 +62,10 @@ $(function () {
     
     //===== SwiperJS
     var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
         slidesPerView: 1.2,  // 2.5
         spaceBetween: 10,
         centeredSlides: true,
