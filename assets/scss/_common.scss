@@ -435,7 +435,7 @@ p {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            box-shadow: #000 6px 6px 0px 0px;
+            box-shadow: $theme-color-2 6px 6px 0px 0px;
         }
     }
 }
