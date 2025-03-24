@@ -101,3 +101,25 @@ $(function () {
     })
     }
 });
+
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Get form data
+    var formData = new FormData(this);
+    var jsonData = Object.fromEntries(formData.entries());
+
+    // Send data to make.com webhook
+    var webhookUrl = "https://hook.eu2.make.com/o7hpg25tb51l4msn283eyvdfrbe6ssxa";
+    fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(jsonData)
+    })
+    .then(response => response.text())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+});
