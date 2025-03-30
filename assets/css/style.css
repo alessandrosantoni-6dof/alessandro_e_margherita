@@ -523,6 +523,12 @@ p {
   height: 560px;
   width: 480px;
 }
+@media (max-width: 767px) {
+  .swiper .swiper-slide {
+    height: 360px;
+    width: 420px;
+  }
+}
 .swiper .swiper-slide h1, .swiper .swiper-slide h2, .swiper .swiper-slide h3, .swiper .swiper-slide h4, .swiper .swiper-slide h5, .swiper .swiper-slide h6 {
   font-family: "Noto Serif", serif !important;
   color: #7e6859;

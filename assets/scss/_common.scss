@@ -417,6 +417,11 @@ p {
         height: 560px;
         width: 480px;
 
+        @media #{$xs}{
+            height: 360px;
+            width: 420px;
+        }
+
         h1, h2, h3, h4, h5, h6 {
             font-family: $font-2 !important;
             color: $theme-color;
