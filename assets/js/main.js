@@ -120,6 +120,10 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         body: JSON.stringify(jsonData)
     })
     .then(response => response.text())
-    .then(data => console.log(data))
+    .then(
+        document.getElementById('contact-title-row').classList.add('d-none'),
+        document.getElementById('contact-form').classList.add('d-none'),
+        document.getElementById('contact-ty-row').classList.remove('d-none'),
+    )
     .catch(error => console.error('Error:', error));
 });

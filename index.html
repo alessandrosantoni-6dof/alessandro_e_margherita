@@ -472,12 +472,21 @@
         <section id="contact" class="contact_area pt-40 pb-40">
             <div class="container">
                 <div class="contact_wrapper" style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.4s; animation-name: fadeInUpBig;">
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center" id="contact-title-row">
                         <div class="col-lg-9">
                             <div class="section_title text-center pb-30">
                                 <h3 class="title">Conferma la tua presenza!</h3>
                                 <img src="assets/images/section_shape.png" alt="Shape">
                                 <p class="text">Ti chiediamo per favore di darci conferma, così possiamo organizzare al meglio - specialmente per preferenze alimentari e allergie!</p>
+                            </div> <!-- section title -->
+                        </div>
+                    </div> <!-- row -->
+                    <div class="row justify-content-center d-none" id="contact-ty-row">
+                        <div class="col-lg-9">
+                            <div class="section_title text-center pb-30">
+                                <h3 class="title">Ci vediamo presto!</h3>
+                                <img src="assets/images/section_shape.png" alt="Shape">
+                                <p class="text">✅ Abbiamo ricevuto conferma della tua presenza e abbiamo registato le tue preferenze. Per qualunque cosa, sai come raggiungerci!</p>
                             </div> <!-- section title -->
                         </div>
                     </div> <!-- row -->
@@ -490,22 +499,22 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="single_form">
-                                    <input name="email" type="email" placeholder="Indirizzo email" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="single_form">
                                     <input name="number" id="number" type="number" placeholder="Numero di partecipanti" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="single_form">
-                                    <input name="diet" type="text" placeholder="Vegetariano / Vegano / Allergie">
+                                    <input name="allergies" type="text" placeholder="Allergie / Intolleranze">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single_form">
+                                    <input name="diet" type="text" placeholder="Vegetariano / Vegano / Celiaco / ...">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="single_form">
-                                    <textarea name="message" placeholder="Note particolari"></textarea>
+                                    <textarea name="message" placeholder="Note particolari (Hai bambini con te? Hai un'esigenza specifica per il cibo? )"></textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
