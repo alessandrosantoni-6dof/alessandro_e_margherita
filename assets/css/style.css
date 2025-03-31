@@ -577,6 +577,10 @@ p {
   text-decoration: none;
 }
 
+.internal-link {
+  color: #7e6859;
+}
+
 /*===========================
      02.HEADER css 
 ===========================*/
