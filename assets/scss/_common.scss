@@ -469,6 +469,12 @@ p {
         background-color: $theme-color-2;
     }
 
+    .modal-body {
+        code {
+            color: $black;
+        }
+    }
+
     .modal-footer {
         background-color: $theme-color-2;
         display: block;

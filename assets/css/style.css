@@ -568,6 +568,9 @@ p {
 .modal .modal-header {
   background-color: #FCF4EC;
 }
+.modal .modal-body code {
+  color: #38424D;
+}
 .modal .modal-footer {
   background-color: #FCF4EC;
   display: block;
@@ -1391,7 +1394,7 @@ p {
   }
 }
 .single_love .love_content .love_title {
-  font-size: 30px;
+  font-size: 36px;
   color: #7e6859;
 }
 .single_love .love_content p {

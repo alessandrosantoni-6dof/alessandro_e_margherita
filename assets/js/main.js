@@ -127,3 +127,15 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     )
     .catch(error => console.error('Error:', error));
 });
+
+document.getElementById('copy-iban-btn').addEventListener('click', function() {
+    const iban = 'IT39Z0306968950100000002633';
+    navigator.clipboard.writeText(iban).then(() => {
+        const button = document.getElementById('copy-iban-btn');
+        button.textContent = 'Copiato!';
+
+        setTimeout(() => {
+            button.textContent = 'Copia IBAN';
+        }, 3000);
+    });
+});
