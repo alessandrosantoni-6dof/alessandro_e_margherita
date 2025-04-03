@@ -2,6 +2,15 @@ window.onload = function () {
     document.querySelector('#preloader').style.display = 'none';
 };
 
+// Fallback Timeout to hide the preloader after 5 seconds
+// setTimeout(function () {
+//     const preloader = document.querySelector('#preloader');
+//     if (preloader && preloader.style.display !== 'none') {
+//         preloader.style.display = 'none';
+//         console.warn('Fallback timeout triggered: Preloader hidden after 5 seconds.');
+//     }
+// }, 5000);
+
 $(function () {
 
     "use strict";
