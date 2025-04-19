@@ -489,3 +489,20 @@ p {
 .internal-link {
     color: $theme-color;
 }
+
+.shadow-theme {
+    box-shadow: $theme-color-2 6px 6px 0px 0px;
+}
+
+.wide-btn {
+    width: fit-content;
+    padding: 20px 40px;
+
+    :hover {
+        cursor: pointer;
+    } 
+
+    @media #{$xs}{
+        padding: 10px 20px;
+    }
+}

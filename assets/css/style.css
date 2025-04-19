@@ -584,6 +584,23 @@ p {
   color: #7e6859;
 }
 
+.shadow-theme {
+  box-shadow: #FCF4EC 6px 6px 0px 0px;
+}
+
+.wide-btn {
+  width: fit-content;
+  padding: 20px 40px;
+}
+.wide-btn :hover {
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .wide-btn {
+    padding: 10px 20px;
+  }
+}
+
 /*===========================
      02.HEADER css 
 ===========================*/
